@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --fundo: #0d4244;
+    --fundoCard: #9cc5a1;
+    --texto: #1e2f23;
+    --titulo: #b6f9c9;
+    --destaque: #568259;
+    --acento: #315c2b;
+    --links: #dce1de;
+    --fundoDestaque: #49a078;
+}
+
+body{
+    margin: 0;
+    background-color: var(--fundo);
+}
+
+/* Tipografia */
+
+p,a, figcaption, span, li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    font-family: Sansation;
+}
+p{
+    color: var(--texto);
+    text-indent: 15px; 
+}
+a{
+    color: var(--links);
+    text-decoration: none;
+}
+
+span{
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: var(--destaque);
+    color: var(--titulo);
+    text-decoration: underline;
+    border-radius: 3px;
+}
+
+h1, h2, h4{
+    color: var(--texto);
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Russo One;
+    font-size: 50px;
+}
+
+h1{
+    color: var(--titulo);
+    font-size: 50px;
+    text-align: center;
+    font-family: Climate Crisis;
+    font-weight: lighter;
+}
+
+#subtitulo{
+    color: var(--fundoDestaque);
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h4{
+    font-size:medium;
+}
+
+/* Header, main, footer e nav */
+
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 75px;
+    background-color: var(--fundoDestaque);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    #logo{
+        width: 100%;
+        max-width: 90px;
+        height: 90px;
+    }
+}
+
+main{
+    padding: 30px;
+}
+
+footer{
+    background-color: var(--fundoDestaque);
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Estrutura e estilização de cards e outros itens */
+
+.barraPesquisa{
+    background-color: var(--destaque);
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    img{
+        flex: 1;
+        height: auto;
+        width: 100%;
+        max-width: 50px;
+        padding-left: 20px;
+    }
+}
+
+#caixaPesquisa{
+    height: 20px;
+    flex: 8;
+    border: none;              
+    outline: none; 
+    background-color: var(--destaque);
+    color: #1f2421;
+    color: var(--texto);
+    font-size: 17px;
+    font-family: Sansation;
+}
+
+.paragrafo{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+    div, figure{
+        flex: 1;
+        background-color:var(--fundoCard);
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+    div{
+        min-height: 350px;
+    }
+    figure{
+        min-height: auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    img, figcaption{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.descarte{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+    div{
+        background-color:var(--fundoCard);
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+        min-height: 370px;
+        border-radius: 30px;
+        margin: 0 auto;
+            img{
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+    img{
+        width: 100%;
+        max-width: 50px;
+        height: auto;
+    }
+}
+
+.futuro, .fonte{
+    background-color:var(--fundoCard);
+        padding: 30px;
+        width: 100%;
+        max-width: 1200px;
+        min-height: 370px;
+        border-radius: 30px;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    div{
+        flex: 2;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+    figure, video{
+        flex: 1;
+    }
+    div, video, caption{
+        display: flex;
+        flex-direction: column;
+    }
+    img, video{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+.fonte{
+    margin-bottom: 30px;
+    min-height: 200px;
+    a{
+        color: var(--acento);
+    }
+    a:hover,  a:focus{
+        color: var(--destaque);
+    }
+}
+
+.iniciativa, .quiz{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    div{
+        flex: 1;
+        background-color:var(--fundoCard);
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+        min-height: 370px;
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+.quiz{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    #pergunta{
+        flex: 1;
+        background-color:var(--fundoCard);
+        padding: 30px;
+        width: 100%;
+        max-width: 500px;
+        min-height: 370px;
+        border-radius: 30px;
+    }
+}
+
+.resultados{
+    background-color:var(--fundoCard);
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 200px;
+    border-radius: 30px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+hr{
+    border: none;
+    background-color: var(--destaque);
+    height: 3px;
+    width: 75%;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input::placeholder {
+    color: var(--texto);
+    font-size: 17px;
+    font-family: Sansation;
+}
+
+button{
+    display: flex;
+    background-color: var(--fundoDestaque);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--fundoDestaque);
+    border-radius: 40px;
+    justify-self: center;
+}
+
+/* Hoover e focus */
+
+button:hover{
+    background-color: var(--fundoCard);
+}
+
+a:hover, a:focus{
+    color: var(--titulo);
+}
+
+:focus {
+    outline: 2px solid var(--titulo);
+    outline-style: dashed;
+}
+
+/* Media responsivo */
+.btn-menu {
+    display: none; /* Esconde o ícone no computador */
+}
+
+
+/* celulares (até 768px) */
+@media (max-width: 768px) {
+    h1{
+        font-size: 30px;
+    }
+
+    input{
+        font-size: 10px;
+    }
+
+    body{
+        width: 100%;
+        max-width: 768px;
+        margin: auto;
+        padding: 0px;
+    }
+
+    main{
+        padding: 15px;
+    }
+
+    .paragrafo, .descarte, .futuro, .fonte, .iniciativa, .quiz, .resultados{
+        display: flex;
+        flex-direction: column;
+        min-width: 0px;
+        max-width: none;
+        height: auto;
+    }
+
+    nav{
+        display: none;
+    }
+}
